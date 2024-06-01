@@ -61,5 +61,5 @@ while game_running:
     else:
         clear()
         game_running = False
-        print("You Win and Avoid a Horrible Death!")
-        print(f"The word was {correct_word}")
+        print("Your botanics have fully flourished!")
+        print(f"The word certainly was {correct_word}")
