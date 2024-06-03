@@ -3,7 +3,12 @@ import os
 import random
                 #the list which will be randomised
 flower_variants = [ 
-    'rose', 'dandelion', 'buttercup', 'daisy', 'foxglove'
+    'rose', 'dandelion', 'buttercup', 'daisy', 'foxglove', 'Aster', 'Azalea',
+    'Bergamot', 'camelia', 'lily', 'carnation', 'chicory', 'chrysanthemum',
+    'cyclamen', 'freesia', 'french marigold', 'fuchsia', 'gardenia', 'grape hyacinth', 'heather',
+    'hibiscus', 'holly', 'honeysuckle', 'hyacinth', 'hydrangea', 'honeysuckle', 'poppy', 'iris',
+    'honeysuckle', 'jasmine', 'kangaroo paw', 'lavender', 'lotus', 'love in the mist', 'marigold',
+    'orchid', 'poppy', 'petunia', 'sunflower', 'cauliflower' 
     ]
                 #number of turns user has left
 total_lives = 6
@@ -36,7 +41,7 @@ while game_running:
         guess = input("Pick a letter: ")
 
         if len(guess) > 1:
-            if guess == correct_word_word:
+            if guess == correct_word:
                 clear()
                 game_running = False
                 print("Your flowers bloom nicely")
@@ -61,5 +66,4 @@ while game_running:
     else:
         clear()
         game_running = False
-        print("Congratulations! your botanics have fully flourished!")
-        print(f"The word certainly was {correct_word}")
+        print(f"Yes, {correct_word} was correct, and it has bloomed nicely!")
